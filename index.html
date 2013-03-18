@@ -1,14 +1,40 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-		<link type="text/css" href="jquery/css/smoothness/jquery-ui-1.10.2.custom.css" rel="stylesheet"/>
+		<!--<link type="text/css" href="jquery/css/smoothness/jquery-ui-1.10.2.custom.css" rel="stylesheet"/>
 		<script type="text/javascript" src="jquery/js/jquery-1.9.1.js"></script>
-		<script type="text/javascript" src="jquery/js/jquery-ui-1.10.2.custom.js"></script>
-		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="jquery/js/jquery-ui-1.10.2.custom.js"></script>-->
+		<meta charset="UTF-8">
+		<title>Threads!</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+		<!--<script type="text/javascript" src="js/index.js"></script>-->
 	</head> 
 	<body> 
-		Test Index
-		<div id="datepicker"></div>
+		<div data-role="page">
+			Threads Overview
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" class="ui-btn-active ui-state-persist">Threads</a></li>
+					<li><a href="jobs.html">Jobs</a></li>
+					<li><a href="survey.html">Survey</a></li>
+				</ul>
+			</div>
+			<div data-role="content">
+				<div data-role="collapsible-set">
+					<div data-role="collapsible">
+						<h3> Database Administrator </h3>
+						<p> This job involves administrating databases</p>			
+					</div>
+					<div data-role="collapsible">
+						<h3> Web Designer </h3>
+						<p>This job involves creating new web pages</p>			
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
 

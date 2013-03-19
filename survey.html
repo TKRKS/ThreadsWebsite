@@ -5,8 +5,9 @@
 		<title>Threads Survey</title> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+		<script type="text/javascript" src="js/survey.js"></script>	
 	</head> 
 	<body> 
 		<div data-role="page">
@@ -18,7 +19,46 @@
 					<li><a href="survey.html" class="ui-btn-active ui-state-persist">Survey</a></li>
 				</ul>
 			</div>
-			This is the survey I think?
+			This survey will help  you chose your threads.
+			<fieldset data-role="controlgroup">
+				<legend>1.  Do you like working with computer hardware?</legend>
+				<input name="q1" id="q1-yes" value="q1-yes" checked="checked" type="radio">
+				<label for="q1-yes">Yes</label>
+				<input name="q1" id="q1-no" value="q1-no" type="radio">
+				<label for="q1-no">No</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+				<legend>2.  Do you like visual design?</legend>
+				<input name="q2" id="q2-yes" value="q2-yes" checked="checked" type="radio">
+				<label for="q2-yes">Yes</label>
+				<input name="q2" id="q2-no" value="q2-no" type="radio">
+				<label for="q2-no">No</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+				<legend>3.  Which of these classes do you like the best?</legend>
+				<input name="qClass" id="qClass-1301" value="qClass-1301" checked="checked" type="radio">
+				<label for="qClass-1301">CS 1301</label>
+				<input name="qClass" id="qClass-1315" value="qClass-1315" type="radio">
+				<label for="qClass-1315">CS 1315</label>
+				<input name="qClass" id="qClass-1331" value="qClass-1331" type="radio">
+				<label for="qClass-1331">CS 1331</label>
+				<input name="qClass" id="qClass-1332" value="qClass-1332" type="radio">
+				<label for="qClass-1332">CS 1332</label>
+				<input name="qClass" id="qClass-2050" value="qClass-2050" type="radio">
+				<label for="qClass-2050">CS 2050</label>
+				<input name="qClass" id="qClass-2110" value="qClass-2110" type="radio">
+				<label for="qClass-2110">CS 2110</label>
+				<input name="qClass" id="qClass-2200" value="qClass-2200" type="radio">
+				<label for="qClass-2200">CS 2200</label>
+				<input name="qClass" id="qClass-2261" value="qClass-2261" type="radio">
+				<label for="qClass-2261">CS 2261</label>
+				<input name="qClass" id="qClass-2340" value="qClass-2340" type="radio">
+				<label for="qClass-2340">CS 2340</label>
+			</fieldset>
+			<input type="button" onclick="results()" class="results" id="results" value="Click here for the survey results!"/>
+			<div id = "resultsDiv" name = "resultsDiv" >
+			Click the button to get your resluts!
+			</div>
 		</div>
 	</body>
 </html>

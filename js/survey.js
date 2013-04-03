@@ -1,6 +1,7 @@
 function results() {
 	var q1Val = $('input[name=q1]:checked').val();
 	var q2Val = $('input[name=q2]:checked').val();
+	var qLangVal = $('input[name=qLanguage]:checked').val();
 	var qClassVal = $('input[name=qClass]:checked').val();
 	var scores = new Array();
 	scores[0] = 0;
@@ -35,6 +36,42 @@ function results() {
 		scores[media] -= 1;
 		scores[people] -= 1;
 	}
+
+	if (qLangVal == 'qLanguage-Assembly') {
+		scores[devices] += 1;
+	} else if (qLangVal == 'qLanguage-C') {
+		scores[devices] += 1;
+		scores[internetworks] += 1;
+		scores[systems] += 1;
+	} else if (qLangVal == 'qLanguage-C++') {
+		scores[devices] += 0.5;
+		scores[internetworks] += 0.5;
+		scores[media] += 0.5;
+		scores[systems] += 0.5;
+	} else if (qLangVal == 'qLanguage-C#') {
+		scores[internetworks] += 0.5;
+	} else if (qLangVal == 'qLanguage-CUDA') {
+		scores[devices] += 1;
+		scores[modeling] += 1;
+	} else if (qLangVal == 'qLanguage-HTML') {
+		scores[internetworks] += 1;
+		scores[people] += 1;
+	} else if (qLangVal == 'qLanguage-Java') {
+		scores[internetworks] += 0.5;
+	} else if (qLangVal == 'qLanguage-Javascript') {
+		scores[internetworks] += 1;
+		scores[people] += 1;
+	} else if (qLangVal == 'qLanguage-Pseudocode') {
+		scores[theory] += 1;
+	} else if (qLangVal == 'qLanguage-Python') {
+		scores[intellegence] += 1;
+		scores[people] += 1;
+	} else if (qLangVal == 'qLanguage-SQL') {
+		scores[internetworks] += 1;
+	} else if (qLangVal == 'qLanguage-Other') {
+
+	}
+
 	if (qClassVal == 'qClass-1301') {
 
 	} else if (qClassVal == 'qClass-1315') {

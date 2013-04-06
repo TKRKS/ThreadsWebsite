@@ -1,6 +1,11 @@
-function results() {
+function getResults() {
 	var q1Val = $('input[name=q1]:checked').val();
 	var q2Val = $('input[name=q2]:checked').val();
+	var q3Val = $('input[name=q3]:checked').val();
+	var q4Val = $('input[name=q4]:checked').val();
+	var q5Val = $('input[name=q5]:checked').val();
+	var q6Val = $('input[name=q6]:checked').val();
+	var q7Val = $('input[name=q7]:checked').val();
 	var qLangVal = $('input[name=qLanguage]:checked').val();
 	var qClassVal = $('input[name=qClass]:checked').val();
 	var scores = new Array();
@@ -22,11 +27,9 @@ function results() {
 	var theory = 7;
 	if (q1Val == 'q1-yes') {
 		scores[devices] += 1;
-		scores[internetworks] += 1;
 		scores[systems] += 1;
 	} else {
 		scores[devices] -= 1;
-		scores[internetworks] -= 1;
 		scores[systems] -= 1;
 	}
 	if (q2Val == 'q2-yes') {
@@ -34,6 +37,45 @@ function results() {
 		scores[people] += 1;
 	} else {
 		scores[media] -= 1;
+		scores[people] -= 1;
+	}
+	if (q3Val == 'q3-yes') {
+		scores[theory] += 1;
+		scores[modeling] += 1;
+		scores[intellegence] += 1;
+	} else {
+		scores[theory] -= 1;
+		scores[modeling] -= 1;
+		scores[intellegence] -= 1;
+	}
+	if (q4Val == 'q4-yes') {
+		scores[internetworks] += 1;
+		scores[devices] += 1;
+	} else {
+		scores[internetworks] -= 1;
+		scores[devices] -= 1;
+	}
+	if (q5Val == 'q5-yes') {
+		scores[internetworks] += 1;
+		scores[systems] += 1;
+	} else {
+		scores[internetworks] -= 1;
+		scores[systems] -= 1;
+	}
+	if (q6Val == 'q6-theory') {
+		scores[theory] += 1;
+		scores[intellegence] += 1;
+	} else {
+		scores[devices] += 1;
+		scores[systems] += 1;
+		scores[media] += 1;
+		scores[people] += 1;
+	}
+	if (q6Val == 'q7-yes') {
+		scores[intellegence] += 1;
+		scores[people] += 1;
+	} else {
+		scores[intellegence] -= 1;
 		scores[people] -= 1;
 	}
 
@@ -75,12 +117,12 @@ function results() {
 	if (qClassVal == 'qClass-1301') {
 
 	} else if (qClassVal == 'qClass-1315') {
-		scores[media] += 1;
-		scores[people] += 1;
+
 	} else if (qClassVal == 'qClass-1331') {
-
+		scores[people] += 1;
 	} else if (qClassVal == 'qClass-1332') {
-
+		scores[theory] += 1;
+		scores[intellegence] += 1;
 	} else if (qClassVal == 'qClass-2050') {
 		scores[modeling] += 1;
 		scores[theory] += 1;

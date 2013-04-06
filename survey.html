@@ -19,23 +19,70 @@
 					<li><a href="survey.html" class="ui-btn-active ui-state-persist">Survey</a></li>
 				</ul>
 			</div>
-			This survey will help  you chose your threads.
+			<p>
+			This survey has been designed to help students choose their threads without knowledge of any specific thread.  Simply choose the option that best describes you for each question and click the button at the bottom of the page for two thread suggestions.
+			</p>
+			<br/>
+			<br/>
+			<br/>
 			<fieldset data-role="controlgroup">
-				<legend>1.  Do you like working with computer hardware?</legend>
+				<legend>Are you interested in working with computer hardware?</legend>
 				<input name="q1" id="q1-yes" value="q1-yes" checked="checked" type="radio">
 				<label for="q1-yes">Yes</label>
 				<input name="q1" id="q1-no" value="q1-no" type="radio">
 				<label for="q1-no">No</label>
 			</fieldset>
+			<br/>
 			<fieldset data-role="controlgroup">
-				<legend>2.  Do you like visual design?</legend>
+				<legend>			<br/>Are you interested in visual design?</legend>
 				<input name="q2" id="q2-yes" value="q2-yes" checked="checked" type="radio">
 				<label for="q2-yes">Yes</label>
 				<input name="q2" id="q2-no" value="q2-no" type="radio">
 				<label for="q2-no">No</label>
 			</fieldset>
+			<br/>
 			<fieldset data-role="controlgroup">
-				<legend>3.  What is your favorite programming language?</legend>
+				<legend>Are you interested in math?</legend>
+				<input name="q3" id="q3-yes" value="q3-yes" checked="checked" type="radio">
+				<label for="q3-yes">Yes</label>
+				<input name="q3" id="q3-no" value="q3-no" type="radio">
+				<label for="q3-no">No</label>
+			</fieldset>
+			<br/>
+			<fieldset data-role="controlgroup">
+				<legend>Are you interested in mobile development?</legend>
+				<input name="q4" id="q4-yes" value="q4-yes" checked="checked" type="radio">
+				<label for="q4-yes">Yes</label>
+				<input name="q4" id="q4-no" value="q4-no" type="radio">
+				<label for="q4-no">No</label>
+			</fieldset>
+			<br/>
+			<fieldset data-role="controlgroup">
+				<legend>Are you interested in how the Internet works?</legend>
+				<input name="q5" id="q5-yes" value="q5-yes" checked="checked" type="radio">
+				<label for="q5-yes">Yes</label>
+				<input name="q5" id="q5-no" value="q5-no" type="radio">
+				<label for="q5-no">No</label>
+			</fieldset>
+			<br/>
+			<fieldset data-role="controlgroup">
+				<legend>Do you prefer theorical or practical information?</legend>
+				<input name="q6" id="q6-theory" value="q6-theory" checked="checked" type="radio">
+				<label for="q6-theory">Theoretical</label>
+				<input name="q6" id="q6-practical" value="q6-practical" type="radio">
+				<label for="q6-practical">Practical</label>
+			</fieldset>
+			<br/>
+			<fieldset data-role="controlgroup">
+				<legend>Are you interested in psychology?</legend>
+				<input name="q7" id="q7-yes" value="q7-yes" checked="checked" type="radio">
+				<label for="q7-yes">Yes</label>
+				<input name="q7" id="q7-no" value="q7-no" type="radio">
+				<label for="q7-no">No</label>
+			</fieldset>
+			<br/>
+			<fieldset data-role="controlgroup">
+				<legend>What is your favorite programming language?</legend>
 				<input name="qLanguage" id="qLanguage-Assembly" value="qLanguage-Assembly" type="radio">
 				<label for="qLanguage-Assembly">Assembly</label>
 				<input name="qLanguage" id="qLanguage-C" value="qLanguage-C" type="radio">
@@ -61,8 +108,9 @@
 				<input name="qLanguage" id="qLanguage-Other" value="qLanguage-Other" checked="checked" type="radio">
 				<label for="qLanguage-Other">Other/None</label>
 			</fieldset>
+			<br/>
 			<fieldset data-role="controlgroup">
-				<legend>4.  Which of these classes do you like the best?</legend>
+				<legend>Which of these classes do you like the best?</legend>
 				<input name="qClass" id="qClass-1301" value="qClass-1301" checked="checked" type="radio">
 				<label for="qClass-1301">CS 1301</label>
 				<input name="qClass" id="qClass-1315" value="qClass-1315" type="radio">
@@ -82,9 +130,10 @@
 				<input name="qClass" id="qClass-2340" value="qClass-2340" type="radio">
 				<label for="qClass-2340">CS 2340</label>
 			</fieldset>
-			<input type="button" onclick="results()" class="results" id="results" value="Click here for the survey results!"/>
+			<br/>
+			<input type="button" onclick="getResults()" class="results" id="results" value="Click here for the survey results!"/>
 			<div id = "resultsDiv" name = "resultsDiv" >
-				Click the button to get your resluts!
+				Click this button to get your resluts!
 			</div>
 		</div>
 	</body>

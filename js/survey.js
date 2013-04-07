@@ -163,7 +163,7 @@ function getResults() {
 		if (maxScores[i] == devices) {
 			resultsDiv += '<li><a href="devices.html">Devices</a></li>';
 		} else if (maxScores[i] == intellegence) {
-			resultsDiv += '<li><a href="intellegence.html">Intellegence</a></li>';
+			resultsDiv += '<li><a href="intelligence.html">Intelligence</a></li>';
 		} else if (maxScores[i] == internetworks) {
 			resultsDiv += '<li><a href="internetworks.html">Information Internetworks</a></li>';
 		} else if (maxScores[i] == media) {

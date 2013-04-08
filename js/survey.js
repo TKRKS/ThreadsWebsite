@@ -216,7 +216,7 @@ function getResults() {
 		} else if (maxScores[i] == people) {
 			resultsDiv += '<li><a href="people.html">People</a></li>';
 		} else if (maxScores[i] == systems) {
-			resultsDiv += '<li><a href="systems.html">Systems</a></li>';
+			resultsDiv += '<li><a href="systems.html">Systems and Architecture</a></li>';
 		} else if (maxScores[i] == theory) {
 			resultsDiv += '<li><a href="theory.html">Theory</a></li>';
 		}

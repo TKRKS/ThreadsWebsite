@@ -109,15 +109,17 @@ function getResults() {
 	}
 	
 	if (q11Val == 'q11-yes') {
-		scores[people] += 1
+		scores[people] += 1;
 	} else {
 		scores[people] -= 1;
 	}
 	
 	if (q12Val == 'q12-work') {
-		scores[theory] += 1
+		scores[theory] += 1;
+		scores[modeling] += 1;
 	} else {
 		scores[theory] -= 1;
+		scores[modeling] -= 1;
 	}
 
 	if (qLangVal == 'qLanguage-Assembly') {

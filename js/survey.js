@@ -23,7 +23,7 @@ function getResults() {
 	scores[6] = 0;
 	scores[7] = 0;	
 	var devices = 0;
-	var intellegence = 1;
+	var intelligence = 1;
 	var internetworks = 2;
 	var media = 3;
 	var modeling = 4;
@@ -47,11 +47,11 @@ function getResults() {
 	if (q3Val == 'q3-yes') {
 		scores[theory] += 1;
 		scores[modeling] += 1;
-		scores[intellegence] += 1;
+		scores[intelligence] += 1;
 	} else {
 		scores[theory] -= 1;
 		scores[modeling] -= 1;
-		scores[intellegence] -= 1;
+		scores[intelligence] -= 1;
 	}
 	if (q4Val == 'q4-yes') {
 		scores[internetworks] += 1;
@@ -69,7 +69,7 @@ function getResults() {
 	}
 	if (q6Val == 'q6-theory') {
 		scores[theory] += 1;
-		scores[intellegence] += 1;
+		scores[intelligence] += 1;
 	} else {
 		scores[devices] += 1;
 		scores[systems] += 1;
@@ -77,10 +77,10 @@ function getResults() {
 		scores[people] += 1;
 	}
 	if (q7Val == 'q7-yes') {
-		scores[intellegence] += 1;
+		scores[intelligence] += 1;
 		scores[people] += 1;
 	} else {
-		scores[intellegence] -= 1;
+		scores[intelligence] -= 1;
 		scores[people] -= 1;
 	}
 	
@@ -149,7 +149,7 @@ function getResults() {
 	} else if (qLangVal == 'qLanguage-Pseudocode') {
 		scores[theory] += 1;
 	} else if (qLangVal == 'qLanguage-Python') {
-		scores[intellegence] += 1;
+		scores[intelligence] += 1;
 		scores[people] += 1;
 	} else if (qLangVal == 'qLanguage-SQL') {
 		scores[internetworks] += 1;
@@ -165,7 +165,7 @@ function getResults() {
 		scores[people] += 1;
 	} else if (qClassVal == 'qClass-1332') {
 		scores[theory] += 1;
-		scores[intellegence] += 1;
+		scores[intelligence] += 1;
 	} else if (qClassVal == 'qClass-2050') {
 		scores[modeling] += 1;
 		scores[theory] += 1;
@@ -205,7 +205,7 @@ function getResults() {
 	for (var i = 0; i < 2; i++) {
 		if (maxScores[i] == devices) {
 			resultsDiv += '<li><a href="devices.html">Devices</a></li>';
-		} else if (maxScores[i] == intellegence) {
+		} else if (maxScores[i] == intelligence) {
 			resultsDiv += '<li><a href="intelligence.html">Intelligence</a></li>';
 		} else if (maxScores[i] == internetworks) {
 			resultsDiv += '<li><a href="internetworks.html">Information Internetworks</a></li>';

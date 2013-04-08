@@ -6,6 +6,11 @@ function getResults() {
 	var q5Val = $('input[name=q5]:checked').val();
 	var q6Val = $('input[name=q6]:checked').val();
 	var q7Val = $('input[name=q7]:checked').val();
+	var q8Val = $('input[name=q8]:checked').val();
+	var q9Val = $('input[name=q9]:checked').val();
+	var q10Val = $('input[name=q10]:checked').val();	
+	var q11Val = $('input[name=q11]:checked').val();
+	var q12Val = $('input[name=q12]:checked').val();
 	var qLangVal = $('input[name=qLanguage]:checked').val();
 	var qClassVal = $('input[name=qClass]:checked').val();
 	var scores = new Array();
@@ -71,12 +76,48 @@ function getResults() {
 		scores[media] += 1;
 		scores[people] += 1;
 	}
-	if (q6Val == 'q7-yes') {
+	if (q7Val == 'q7-yes') {
 		scores[intellegence] += 1;
 		scores[people] += 1;
 	} else {
 		scores[intellegence] -= 1;
 		scores[people] -= 1;
+	}
+	
+	if (q8Val == 'q8-yes') {
+		scores[modeling] += 1;
+		scores[intelligence] += 1;
+	} else {
+		scores[modeling] -= 1;
+		scores[intelligence] -= 1;
+	}
+	
+	if (q9Val == 'q9-yes') {
+		scores[media] += 1;
+		scores[modeling] += 1;
+	} else {
+		scores[media] -= 1;
+		scores[modeling] -= 1;
+	}
+	
+	if (q10Val == 'q10-yes') {
+		scores[devices] += 1;
+		scores[people] += 1
+	} else {
+		scores[devices] -= 1;
+		scores[people] -= 1;
+	}
+	
+	if (q11Val == 'q11-yes') {
+		scores[people] += 1
+	} else {
+		scores[people] -= 1;
+	}
+	
+	if (q12Val == 'q12-work') {
+		scores[theory] += 1
+	} else {
+		scores[theory] -= 1;
 	}
 
 	if (qLangVal == 'qLanguage-Assembly') {
